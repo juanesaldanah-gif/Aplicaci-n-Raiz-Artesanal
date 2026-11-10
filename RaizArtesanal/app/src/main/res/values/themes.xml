@@ -1,0 +1,17 @@
+<resources>
+    <style name="Theme.RaizArtesanal" parent="Theme.Material3.Light.NoActionBar">
+        <item name="colorPrimary">@color/terracotta</item>
+        <item name="colorOnPrimary">@color/white</item>
+        <item name="colorSecondary">@color/seller_teal</item>
+        <item name="android:statusBarColor">@android:color/transparent</item>
+        <item name="android:navigationBarColor">@android:color/transparent</item>
+        <item name="android:fontFamily">sans-serif</item>
+        <item name="android:windowBackground">@color/white</item>
+        <item name="materialButtonStyle">@style/Widget.RaizArtesanal.Button</item>
+    </style>
+
+    <!-- Tema de arranque: fondo terracota para que no haya destello blanco antes del splash -->
+    <style name="Theme.RaizArtesanal.Launch">
+        <item name="android:windowBackground">@color/terracotta</item>
+    </style>
+</resources>

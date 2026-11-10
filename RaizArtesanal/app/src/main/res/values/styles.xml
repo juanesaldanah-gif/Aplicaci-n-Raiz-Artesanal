@@ -1,0 +1,44 @@
+<resources>
+    <style name="ShapeAppearance.RaizArtesanal.Button" parent="">
+        <item name="cornerFamily">rounded</item>
+        <item name="cornerSize">14dp</item>
+    </style>
+
+    <!-- Botón principal terracota (se aplica a todos los MaterialButton por defecto) -->
+    <style name="Widget.RaizArtesanal.Button" parent="Widget.Material3.Button">
+        <item name="shapeAppearance">@style/ShapeAppearance.RaizArtesanal.Button</item>
+        <item name="android:minHeight">54dp</item>
+        <item name="android:insetTop">0dp</item>
+        <item name="android:insetBottom">0dp</item>
+        <item name="android:textAllCaps">false</item>
+        <item name="android:textSize">15sp</item>
+        <item name="android:textStyle">bold</item>
+    </style>
+
+    <!-- Botón blanco con borde (Continuar con Google) -->
+    <style name="Widget.RaizArtesanal.Button.Outlined" parent="Widget.Material3.Button.OutlinedButton">
+        <item name="shapeAppearance">@style/ShapeAppearance.RaizArtesanal.Button</item>
+        <item name="android:minHeight">54dp</item>
+        <item name="android:insetTop">0dp</item>
+        <item name="android:insetBottom">0dp</item>
+        <item name="android:textAllCaps">false</item>
+        <item name="android:textSize">15sp</item>
+        <item name="android:textStyle">bold</item>
+        <item name="android:textColor">@color/earth_brown</item>
+        <item name="strokeColor">@color/border_soft</item>
+    </style>
+
+    <!-- Botón arena con texto terracota (Ingresar con huella) -->
+    <style name="Widget.RaizArtesanal.Button.Tonal" parent="Widget.Material3.Button.TonalButton">
+        <item name="shapeAppearance">@style/ShapeAppearance.RaizArtesanal.Button</item>
+        <item name="android:minHeight">54dp</item>
+        <item name="android:insetTop">0dp</item>
+        <item name="android:insetBottom">0dp</item>
+        <item name="android:textAllCaps">false</item>
+        <item name="android:textSize">15sp</item>
+        <item name="android:textStyle">bold</item>
+        <item name="android:textColor">@color/terracotta</item>
+        <item name="backgroundTint">@color/sand</item>
+        <item name="iconTint">@color/terracotta</item>
+    </style>
+</resources>

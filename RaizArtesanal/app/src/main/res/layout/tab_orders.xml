@@ -1,0 +1,28 @@
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent" android:layout_height="match_parent">
+    <ScrollView
+        android:layout_width="match_parent" android:layout_height="match_parent">
+        <LinearLayout
+            android:id="@+id/ordersList"
+            android:layout_width="match_parent" android:layout_height="wrap_content"
+            android:orientation="vertical" android:padding="16dp"/>
+    </ScrollView>
+    <LinearLayout
+        android:id="@+id/ordersEmpty"
+        android:layout_width="match_parent" android:layout_height="wrap_content"
+        android:layout_gravity="center" android:orientation="vertical" android:gravity="center"
+        android:padding="32dp" android:visibility="gone">
+        <ImageView
+            android:layout_width="64dp" android:layout_height="64dp"
+            android:src="@drawable/ic_bag" android:tint="@color/placeholder_icon"
+            android:importantForAccessibility="no"/>
+        <TextView
+            android:layout_width="wrap_content" android:layout_height="wrap_content"
+            android:layout_marginTop="12dp" android:text="Aún no tienes compras"
+            android:textColor="@color/earth_brown" android:textSize="17sp" android:textStyle="bold"/>
+        <TextView
+            android:layout_width="wrap_content" android:layout_height="wrap_content"
+            android:layout_marginTop="4dp" android:text="Cuando pagues un pedido aparecerá aquí."
+            android:textColor="@color/text_muted" android:textSize="14sp"/>
+    </LinearLayout>
+</FrameLayout>

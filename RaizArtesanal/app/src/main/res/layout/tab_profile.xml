@@ -1,0 +1,30 @@
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent" android:layout_height="match_parent">
+    <LinearLayout
+        android:layout_width="match_parent" android:layout_height="wrap_content"
+        android:orientation="vertical" android:gravity="center_horizontal" android:padding="24dp">
+        <TextView
+            android:id="@+id/avatarInitial"
+            android:layout_width="84dp" android:layout_height="84dp"
+            android:background="@drawable/bg_circle_terracotta" android:gravity="center"
+            android:textColor="@color/white" android:textSize="34sp" android:textStyle="bold"/>
+        <TextView
+            android:id="@+id/profileName"
+            android:layout_width="wrap_content" android:layout_height="wrap_content"
+            android:layout_marginTop="14dp" android:textColor="@color/earth_brown"
+            android:textSize="20sp" android:textStyle="bold"/>
+        <TextView
+            android:id="@+id/profileEmail"
+            android:layout_width="wrap_content" android:layout_height="wrap_content"
+            android:layout_marginTop="2dp" android:textColor="@color/text_muted" android:textSize="14sp"/>
+        <LinearLayout
+            android:id="@+id/profileRows"
+            android:layout_width="match_parent" android:layout_height="wrap_content"
+            android:layout_marginTop="24dp" android:orientation="vertical"/>
+        <com.google.android.material.button.MaterialButton
+            android:id="@+id/logoutButton"
+            style="@style/Widget.RaizArtesanal.Button.Outlined"
+            android:layout_width="match_parent" android:layout_height="wrap_content"
+            android:layout_marginTop="12dp" android:text="Cerrar sesión"/>
+    </LinearLayout>
+</ScrollView>

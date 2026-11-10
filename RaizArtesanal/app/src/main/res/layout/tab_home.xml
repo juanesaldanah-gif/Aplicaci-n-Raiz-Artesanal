@@ -1,0 +1,35 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent" android:layout_height="match_parent"
+    android:orientation="vertical">
+    <LinearLayout
+        android:layout_width="match_parent" android:layout_height="44dp"
+        android:layout_margin="16dp" android:background="@drawable/bg_search"
+        android:gravity="center_vertical" android:orientation="horizontal"
+        android:paddingStart="14dp" android:paddingEnd="14dp">
+        <ImageView
+            android:layout_width="20dp" android:layout_height="20dp"
+            android:src="@drawable/ic_search" android:tint="@color/text_muted"
+            android:importantForAccessibility="no"/>
+        <EditText
+            android:id="@+id/searchInput"
+            android:layout_width="0dp" android:layout_height="match_parent" android:layout_weight="1"
+            android:layout_marginStart="10dp" android:background="@null"
+            android:hint="Buscar artesanías" android:textColorHint="@color/hint"
+            android:textColor="@color/earth_brown" android:textSize="14sp"
+            android:inputType="text" android:imeOptions="actionSearch" android:maxLines="1"/>
+    </LinearLayout>
+    <FrameLayout
+        android:layout_width="match_parent" android:layout_height="0dp" android:layout_weight="1">
+        <androidx.recyclerview.widget.RecyclerView
+            android:id="@+id/productList"
+            android:layout_width="match_parent" android:layout_height="match_parent"
+            android:clipToPadding="false" android:paddingStart="10dp" android:paddingEnd="10dp"
+            android:paddingBottom="16dp"/>
+        <TextView
+            android:id="@+id/emptySearch"
+            android:layout_width="match_parent" android:layout_height="wrap_content"
+            android:layout_gravity="center" android:gravity="center" android:padding="32dp"
+            android:text="No encontramos artesanías con ese nombre."
+            android:textColor="@color/text_muted" android:textSize="15sp" android:visibility="gone"/>
+    </FrameLayout>
+</LinearLayout>

@@ -1,0 +1,49 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent" android:layout_height="wrap_content"
+    android:orientation="horizontal" android:gravity="center_vertical"
+    android:background="@drawable/bg_outline" android:padding="12dp" android:layout_marginBottom="12dp">
+    <FrameLayout
+        android:layout_width="64dp" android:layout_height="64dp"
+        android:background="@drawable/bg_image_placeholder">
+        <ImageView
+            android:layout_width="32dp" android:layout_height="32dp" android:layout_gravity="center"
+            android:src="@drawable/ic_image_placeholder" android:importantForAccessibility="no"/>
+    </FrameLayout>
+    <LinearLayout
+        android:layout_width="0dp" android:layout_height="wrap_content" android:layout_weight="1"
+        android:layout_marginStart="12dp" android:orientation="vertical">
+        <TextView
+            android:id="@+id/lineName"
+            android:layout_width="match_parent" android:layout_height="wrap_content"
+            android:textColor="@color/earth_brown" android:textSize="15sp" android:textStyle="bold"/>
+        <TextView
+            android:id="@+id/linePrice"
+            android:layout_width="wrap_content" android:layout_height="wrap_content"
+            android:layout_marginTop="2dp" android:textColor="@color/terracotta"
+            android:textSize="14sp" android:textStyle="bold"/>
+        <LinearLayout
+            android:layout_width="wrap_content" android:layout_height="wrap_content"
+            android:layout_marginTop="6dp" android:orientation="horizontal" android:gravity="center_vertical">
+            <TextView
+                android:id="@+id/lineMinus"
+                android:layout_width="36dp" android:layout_height="36dp" android:gravity="center"
+                android:text="–" android:textColor="@color/terracotta" android:textSize="20sp" android:textStyle="bold"
+                android:clickable="true" android:focusable="true" android:contentDescription="Quitar una unidad"/>
+            <TextView
+                android:id="@+id/lineQty"
+                android:layout_width="24dp" android:layout_height="wrap_content" android:gravity="center"
+                android:textColor="@color/earth_brown" android:textSize="15sp" android:textStyle="bold"/>
+            <TextView
+                android:id="@+id/linePlus"
+                android:layout_width="36dp" android:layout_height="36dp" android:gravity="center"
+                android:text="+" android:textColor="@color/terracotta" android:textSize="20sp" android:textStyle="bold"
+                android:clickable="true" android:focusable="true" android:contentDescription="Agregar una unidad"/>
+        </LinearLayout>
+    </LinearLayout>
+    <ImageView
+        android:id="@+id/lineRemove"
+        android:layout_width="40dp" android:layout_height="40dp" android:layout_gravity="top" android:padding="9dp"
+        android:src="@drawable/ic_delete" android:tint="@color/danger"
+        android:background="?attr/selectableItemBackgroundBorderless"
+        android:clickable="true" android:focusable="true" android:contentDescription="Eliminar del carrito"/>
+</LinearLayout>

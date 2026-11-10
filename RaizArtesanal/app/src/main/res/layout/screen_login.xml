@@ -1,0 +1,72 @@
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent" android:layout_height="match_parent"
+    android:background="@color/white" android:fillViewport="true">
+    <LinearLayout
+        android:layout_width="match_parent" android:layout_height="wrap_content"
+        android:orientation="vertical" android:paddingStart="24dp" android:paddingEnd="24dp"
+        android:paddingTop="56dp" android:paddingBottom="24dp">
+        <TextView
+            android:layout_width="match_parent" android:layout_height="wrap_content"
+            android:text="Raíz Artesanal" android:gravity="center" android:textColor="@color/terracotta"
+            android:textSize="28sp" android:textStyle="bold"/>
+        <TextView
+            android:layout_width="match_parent" android:layout_height="wrap_content"
+            android:text="Inicia sesión" android:gravity="center" android:textColor="@color/text_muted"
+            android:textSize="15sp" android:layout_marginTop="8dp"/>
+
+        <TextView
+            android:layout_width="wrap_content" android:layout_height="wrap_content"
+            android:text="CORREO" android:textColor="@color/text_muted" android:textSize="11sp"
+            android:textStyle="bold" android:letterSpacing="0.08" android:layout_marginTop="40dp"/>
+        <EditText
+            android:id="@+id/email"
+            android:layout_width="match_parent" android:layout_height="52dp"
+            android:layout_marginTop="8dp" android:background="@drawable/bg_outline"
+            android:paddingStart="16dp" android:paddingEnd="16dp"
+            android:hint="nombre@correo.com" android:textColorHint="@color/hint"
+            android:textColor="@color/earth_brown" android:textSize="15sp"
+            android:inputType="textEmailAddress" android:maxLines="1" android:autofillHints="emailAddress"/>
+
+        <TextView
+            android:layout_width="wrap_content" android:layout_height="wrap_content"
+            android:text="CONTRASEÑA" android:textColor="@color/text_muted" android:textSize="11sp"
+            android:textStyle="bold" android:letterSpacing="0.08" android:layout_marginTop="18dp"/>
+        <EditText
+            android:id="@+id/password"
+            android:layout_width="match_parent" android:layout_height="52dp"
+            android:layout_marginTop="8dp" android:background="@drawable/bg_outline"
+            android:paddingStart="16dp" android:paddingEnd="16dp"
+            android:hint="••••••••" android:textColorHint="@color/hint"
+            android:textColor="@color/earth_brown" android:textSize="15sp"
+            android:inputType="textPassword" android:maxLines="1" android:autofillHints="password"/>
+
+        <TextView
+            android:id="@+id/forgot"
+            android:layout_width="wrap_content" android:layout_height="wrap_content"
+            android:layout_gravity="end" android:padding="10dp"
+            android:text="¿Olvidaste tu contraseña?" android:textColor="@color/terracotta" android:textSize="13sp"/>
+
+        <com.google.android.material.button.MaterialButton
+            android:id="@+id/submitLogin"
+            android:layout_width="match_parent" android:layout_height="wrap_content"
+            android:layout_marginTop="6dp" android:text="Iniciar sesión"/>
+        <com.google.android.material.button.MaterialButton
+            android:id="@+id/google"
+            style="@style/Widget.RaizArtesanal.Button.Outlined"
+            android:layout_width="match_parent" android:layout_height="wrap_content"
+            android:layout_marginTop="12dp" android:text="Continuar con Google"/>
+        <com.google.android.material.button.MaterialButton
+            android:id="@+id/biometric"
+            style="@style/Widget.RaizArtesanal.Button.Tonal"
+            android:layout_width="match_parent" android:layout_height="wrap_content"
+            android:layout_marginTop="12dp" android:text="Ingresar con huella"
+            app:icon="@drawable/ic_fingerprint" app:iconGravity="textStart" app:iconPadding="10dp"/>
+
+        <TextView
+            android:id="@+id/toRegister"
+            android:layout_width="match_parent" android:layout_height="wrap_content"
+            android:gravity="center" android:padding="20dp" android:layout_marginTop="16dp"
+            android:textColor="@color/text_muted" android:textSize="14sp"/>
+    </LinearLayout>
+</ScrollView>

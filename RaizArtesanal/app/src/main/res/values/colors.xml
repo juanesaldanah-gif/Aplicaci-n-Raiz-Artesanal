@@ -1,0 +1,21 @@
+<resources>
+    <color name="terracotta">#B5482A</color>
+    <color name="terracotta_dark">#8F3519</color>
+    <color name="earth_brown">#2E211A</color>
+    <color name="cream">#FAF3E8</color>
+    <color name="seller_teal">#1E7C70</color>
+    <color name="gold">#E0A526</color>
+    <color name="danger">#C0392B</color>
+    <color name="success">#2E8B57</color>
+    <color name="white">#FFFFFF</color>
+
+    <!-- Tonos de los bocetos (fondos blancos + arena) -->
+    <color name="sand">#F4E2D3</color>
+    <color name="sand_light">#F8F0EA</color>
+    <color name="sand_image">#EFE4DA</color>
+    <color name="placeholder_icon">#C9B8A8</color>
+    <color name="border_soft">#EADCCF</color>
+    <color name="text_muted">#7A6A60</color>
+    <color name="hint">#B8A89B</color>
+    <color name="success_bg">#E3F2EA</color>
+</resources>

@@ -1,0 +1,84 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent" android:layout_height="match_parent"
+    android:orientation="vertical" android:background="@color/white">
+
+    <FrameLayout
+        android:layout_width="match_parent" android:layout_height="56dp"
+        android:background="@color/terracotta">
+        <TextView
+            android:id="@+id/headerTitle"
+            android:layout_width="wrap_content" android:layout_height="match_parent"
+            android:gravity="center_vertical" android:paddingStart="20dp"
+            android:text="Raíz Artesanal" android:textColor="@color/white"
+            android:textSize="20sp" android:textStyle="bold"/>
+        <FrameLayout
+            android:id="@+id/cartButton"
+            android:layout_width="56dp" android:layout_height="56dp"
+            android:layout_gravity="end|center_vertical" android:clickable="true" android:focusable="true"
+            android:background="?attr/selectableItemBackgroundBorderless"
+            android:contentDescription="Abrir carrito">
+            <ImageView
+                android:layout_width="26dp" android:layout_height="26dp" android:layout_gravity="center"
+                android:src="@drawable/ic_cart" android:tint="@color/white"
+                android:importantForAccessibility="no"/>
+            <TextView
+                android:id="@+id/cartBadge"
+                android:layout_width="wrap_content" android:layout_height="wrap_content"
+                android:minWidth="18dp" android:minHeight="18dp"
+                android:layout_gravity="top|end" android:layout_marginTop="8dp" android:layout_marginEnd="6dp"
+                android:background="@drawable/bg_badge" android:gravity="center"
+                android:textColor="@color/earth_brown" android:textSize="10sp" android:textStyle="bold"
+                android:visibility="gone"/>
+        </FrameLayout>
+    </FrameLayout>
+
+    <FrameLayout
+        android:id="@+id/tabContent"
+        android:layout_width="match_parent" android:layout_height="0dp" android:layout_weight="1"/>
+
+    <View android:layout_width="match_parent" android:layout_height="1dp" android:background="@color/border_soft"/>
+    <LinearLayout
+        android:layout_width="match_parent" android:layout_height="64dp"
+        android:orientation="horizontal" android:background="@color/white">
+        <LinearLayout
+            android:id="@+id/navHome"
+            android:layout_width="0dp" android:layout_height="match_parent" android:layout_weight="1"
+            android:orientation="vertical" android:gravity="center" android:clickable="true" android:focusable="true"
+            android:background="?attr/selectableItemBackground">
+            <ImageView android:id="@+id/navHomeIcon" android:layout_width="24dp" android:layout_height="24dp"
+                android:src="@drawable/ic_home" android:importantForAccessibility="no"/>
+            <TextView android:id="@+id/navHomeLabel" android:layout_width="wrap_content" android:layout_height="wrap_content"
+                android:text="Inicio" android:textSize="11sp" android:layout_marginTop="2dp"/>
+        </LinearLayout>
+        <LinearLayout
+            android:id="@+id/navCart"
+            android:layout_width="0dp" android:layout_height="match_parent" android:layout_weight="1"
+            android:orientation="vertical" android:gravity="center" android:clickable="true" android:focusable="true"
+            android:background="?attr/selectableItemBackground">
+            <ImageView android:layout_width="24dp" android:layout_height="24dp"
+                android:src="@drawable/ic_cart" android:tint="@color/text_muted" android:importantForAccessibility="no"/>
+            <TextView android:layout_width="wrap_content" android:layout_height="wrap_content"
+                android:text="Carrito" android:textColor="@color/text_muted" android:textSize="11sp" android:layout_marginTop="2dp"/>
+        </LinearLayout>
+        <LinearLayout
+            android:id="@+id/navOrders"
+            android:layout_width="0dp" android:layout_height="match_parent" android:layout_weight="1"
+            android:orientation="vertical" android:gravity="center" android:clickable="true" android:focusable="true"
+            android:background="?attr/selectableItemBackground">
+            <ImageView android:id="@+id/navOrdersIcon" android:layout_width="24dp" android:layout_height="24dp"
+                android:src="@drawable/ic_bag" android:importantForAccessibility="no"/>
+            <TextView android:id="@+id/navOrdersLabel" android:layout_width="wrap_content" android:layout_height="wrap_content"
+                android:text="Compras" android:textSize="11sp" android:layout_marginTop="2dp"/>
+        </LinearLayout>
+        <LinearLayout
+            android:id="@+id/navProfile"
+            android:layout_width="0dp" android:layout_height="match_parent" android:layout_weight="1"
+            android:orientation="vertical" android:gravity="center" android:clickable="true" android:focusable="true"
+            android:background="?attr/selectableItemBackground">
+            <ImageView android:id="@+id/navProfileIcon" android:layout_width="24dp" android:layout_height="24dp"
+                android:src="@drawable/ic_person" android:importantForAccessibility="no"/>
+            <TextView android:id="@+id/navProfileLabel" android:layout_width="wrap_content" android:layout_height="wrap_content"
+                android:text="Perfil" android:textSize="11sp" android:layout_marginTop="2dp"/>
+        </LinearLayout>
+    </LinearLayout>
+</LinearLayout>

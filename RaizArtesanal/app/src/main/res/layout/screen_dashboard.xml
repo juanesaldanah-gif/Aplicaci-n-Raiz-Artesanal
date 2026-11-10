@@ -1,0 +1,48 @@
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent" android:layout_height="match_parent" android:background="@color/cream">
+    <LinearLayout android:layout_width="match_parent" android:layout_height="wrap_content"
+        android:orientation="vertical" android:padding="20dp">
+        <TextView android:id="@+id/back" android:layout_width="wrap_content" android:layout_height="wrap_content"
+            android:text="‹ Cerrar sesión" android:textColor="@color/terracotta" android:padding="8dp"/>
+        <TextView android:id="@+id/greeting" android:layout_width="match_parent" android:layout_height="wrap_content"
+            android:text="Bienvenido" android:textColor="@color/earth_brown" android:textSize="28sp"
+            android:textStyle="bold" android:layout_marginTop="18dp"/>
+        <TextView android:id="@+id/subtitle" android:layout_width="match_parent" android:layout_height="wrap_content"
+            android:text="Tu espacio para descubrir y apoyar la artesanía colombiana."
+            android:textColor="@color/earth_brown" android:layout_marginTop="6dp" android:layout_marginBottom="20dp"/>
+        <com.google.android.material.card.MaterialCardView android:layout_width="match_parent" android:layout_height="wrap_content"
+            app:cardCornerRadius="16dp" xmlns:app="http://schemas.android.com/apk/res-auto"
+            app:cardBackgroundColor="@color/white">
+            <LinearLayout android:layout_width="match_parent" android:layout_height="wrap_content"
+                android:orientation="vertical" android:padding="18dp">
+                <TextView android:layout_width="match_parent" android:layout_height="wrap_content"
+                    android:text="Artesanía con historia" android:textSize="20sp" android:textStyle="bold"
+                    android:textColor="@color/earth_brown"/>
+                <TextView android:layout_width="match_parent" android:layout_height="wrap_content"
+                    android:text="Encuentra piezas únicas hechas por manos colombianas."
+                    android:textColor="@color/earth_brown" android:layout_marginTop="6dp"/>
+            </LinearLayout>
+        </com.google.android.material.card.MaterialCardView>
+        <com.google.android.material.button.MaterialButton android:id="@+id/actionOne"
+            android:layout_width="match_parent" android:layout_height="54dp" android:text="Catálogo de productos"
+            android:textAllCaps="false" android:layout_marginTop="18dp"/>
+        <com.google.android.material.button.MaterialButton android:id="@+id/actionTwo"
+            style="@style/Widget.Material3.Button.OutlinedButton" android:layout_width="match_parent"
+            android:layout_height="54dp" android:text="Carrito de compras" android:textAllCaps="false"/>
+        <com.google.android.material.button.MaterialButton android:id="@+id/actionThree"
+            style="@style/Widget.Material3.Button.OutlinedButton" android:layout_width="match_parent"
+            android:layout_height="54dp" android:text="Mis pedidos" android:textAllCaps="false"/>
+        <com.google.android.material.button.MaterialButton android:id="@+id/actionFour"
+            style="@style/Widget.Material3.Button.OutlinedButton" android:layout_width="match_parent"
+            android:layout_height="54dp" android:text="Mi perfil" android:textAllCaps="false"/>
+        <com.google.android.material.button.MaterialButton android:id="@+id/actionFive"
+            style="@style/Widget.Material3.Button.OutlinedButton" android:layout_width="match_parent"
+            android:layout_height="54dp" android:text="Administrar productos" android:textAllCaps="false"/>
+        <com.google.android.material.button.MaterialButton android:id="@+id/actionSix"
+            style="@style/Widget.Material3.Button.OutlinedButton" android:layout_width="match_parent"
+            android:layout_height="54dp" android:text="Administración de usuarios" android:textAllCaps="false"/>
+        <com.google.android.material.button.MaterialButton android:id="@+id/actionSeven"
+            style="@style/Widget.Material3.Button.OutlinedButton" android:layout_width="match_parent"
+            android:layout_height="54dp" android:text="Reportes" android:textAllCaps="false"/>
+    </LinearLayout>
+</ScrollView>

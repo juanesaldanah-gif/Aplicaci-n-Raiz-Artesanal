@@ -1,0 +1,38 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent" android:layout_height="match_parent"
+    android:orientation="vertical" android:gravity="center" android:background="@color/white"
+    android:padding="32dp">
+    <ImageView
+        android:layout_width="96dp" android:layout_height="96dp"
+        android:background="@drawable/bg_circle_success" android:padding="26dp"
+        android:src="@drawable/ic_check" android:tint="@color/success"
+        android:importantForAccessibility="no"/>
+    <TextView
+        android:layout_width="wrap_content" android:layout_height="wrap_content"
+        android:layout_marginTop="24dp" android:text="¡Pedido confirmado!"
+        android:textColor="@color/earth_brown" android:textSize="24sp" android:textStyle="bold"/>
+    <TextView
+        android:id="@+id/successOrder"
+        android:layout_width="wrap_content" android:layout_height="wrap_content"
+        android:layout_marginTop="8dp" android:textColor="@color/terracotta"
+        android:textSize="16sp" android:textStyle="bold"/>
+    <TextView
+        android:id="@+id/successDetail"
+        android:layout_width="match_parent" android:layout_height="wrap_content"
+        android:layout_marginTop="8dp" android:gravity="center"
+        android:textColor="@color/text_muted" android:textSize="14sp"/>
+    <TextView
+        android:layout_width="match_parent" android:layout_height="wrap_content"
+        android:layout_marginTop="16dp" android:gravity="center"
+        android:text="Pago simulado: en esta versión de demostración no se hizo ningún cobro."
+        android:textColor="@color/text_muted" android:textSize="12sp"/>
+    <com.google.android.material.button.MaterialButton
+        android:id="@+id/viewOrders"
+        android:layout_width="match_parent" android:layout_height="wrap_content"
+        android:layout_marginTop="32dp" android:text="Ver mis compras"/>
+    <com.google.android.material.button.MaterialButton
+        android:id="@+id/keepShopping"
+        style="@style/Widget.RaizArtesanal.Button.Outlined"
+        android:layout_width="match_parent" android:layout_height="wrap_content"
+        android:layout_marginTop="12dp" android:text="Seguir comprando"/>
+</LinearLayout>

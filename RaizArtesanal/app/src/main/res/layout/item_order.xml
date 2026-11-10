@@ -1,0 +1,35 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent" android:layout_height="wrap_content"
+    android:orientation="vertical" android:background="@drawable/bg_outline"
+    android:padding="14dp" android:layout_marginBottom="12dp">
+    <LinearLayout
+        android:layout_width="match_parent" android:layout_height="wrap_content"
+        android:orientation="horizontal" android:gravity="center_vertical">
+        <TextView
+            android:id="@+id/orderNumber"
+            android:layout_width="0dp" android:layout_height="wrap_content" android:layout_weight="1"
+            android:textColor="@color/earth_brown" android:textSize="15sp" android:textStyle="bold"/>
+        <TextView
+            android:id="@+id/orderStatus"
+            android:layout_width="wrap_content" android:layout_height="wrap_content"
+            android:background="@drawable/bg_chip_success" android:paddingStart="10dp" android:paddingEnd="10dp"
+            android:paddingTop="3dp" android:paddingBottom="3dp"
+            android:textColor="@color/success" android:textSize="12sp" android:textStyle="bold"/>
+    </LinearLayout>
+    <TextView
+        android:id="@+id/orderSummary"
+        android:layout_width="match_parent" android:layout_height="wrap_content"
+        android:layout_marginTop="6dp" android:textColor="@color/text_muted" android:textSize="13sp"/>
+    <LinearLayout
+        android:layout_width="match_parent" android:layout_height="wrap_content"
+        android:layout_marginTop="8dp" android:orientation="horizontal" android:gravity="center_vertical">
+        <TextView
+            android:id="@+id/orderTotal"
+            android:layout_width="0dp" android:layout_height="wrap_content" android:layout_weight="1"
+            android:textColor="@color/terracotta" android:textSize="15sp" android:textStyle="bold"/>
+        <TextView
+            android:id="@+id/orderDate"
+            android:layout_width="wrap_content" android:layout_height="wrap_content"
+            android:textColor="@color/text_muted" android:textSize="12sp"/>
+    </LinearLayout>
+</LinearLayout>

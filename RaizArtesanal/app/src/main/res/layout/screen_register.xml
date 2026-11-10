@@ -1,0 +1,85 @@
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent" android:layout_height="match_parent"
+    android:background="@color/white" android:fillViewport="true">
+    <LinearLayout
+        android:layout_width="match_parent" android:layout_height="wrap_content"
+        android:orientation="vertical" android:padding="24dp">
+        <TextView
+            android:id="@+id/back"
+            android:layout_width="wrap_content" android:layout_height="wrap_content"
+            android:text="‹ Volver" android:textColor="@color/terracotta" android:textSize="15sp"
+            android:textStyle="bold" android:padding="8dp"/>
+        <TextView
+            android:layout_width="match_parent" android:layout_height="wrap_content"
+            android:text="Crea tu cuenta" android:textColor="@color/terracotta"
+            android:textSize="28sp" android:textStyle="bold" android:layout_marginTop="16dp"/>
+        <TextView
+            android:layout_width="match_parent" android:layout_height="wrap_content"
+            android:text="Únete a la comunidad de Raíz Artesanal" android:textColor="@color/text_muted"
+            android:textSize="15sp" android:layout_marginTop="6dp"/>
+
+        <TextView
+            android:layout_width="wrap_content" android:layout_height="wrap_content"
+            android:text="NOMBRE COMPLETO" android:textColor="@color/text_muted" android:textSize="11sp"
+            android:textStyle="bold" android:letterSpacing="0.08" android:layout_marginTop="28dp"/>
+        <EditText
+            android:id="@+id/name"
+            android:layout_width="match_parent" android:layout_height="52dp"
+            android:layout_marginTop="8dp" android:background="@drawable/bg_outline"
+            android:paddingStart="16dp" android:paddingEnd="16dp" android:textColor="@color/earth_brown"
+            android:textSize="15sp" android:inputType="textPersonName|textCapWords" android:maxLines="1"/>
+        <TextView
+            android:layout_width="wrap_content" android:layout_height="wrap_content"
+            android:text="CORREO" android:textColor="@color/text_muted" android:textSize="11sp"
+            android:textStyle="bold" android:letterSpacing="0.08" android:layout_marginTop="18dp"/>
+        <EditText
+            android:id="@+id/email"
+            android:layout_width="match_parent" android:layout_height="52dp"
+            android:layout_marginTop="8dp" android:background="@drawable/bg_outline"
+            android:paddingStart="16dp" android:paddingEnd="16dp"
+            android:hint="nombre@correo.com" android:textColorHint="@color/hint"
+            android:textColor="@color/earth_brown" android:textSize="15sp"
+            android:inputType="textEmailAddress" android:maxLines="1"/>
+        <TextView
+            android:layout_width="wrap_content" android:layout_height="wrap_content"
+            android:text="CONTRASEÑA" android:textColor="@color/text_muted" android:textSize="11sp"
+            android:textStyle="bold" android:letterSpacing="0.08" android:layout_marginTop="18dp"/>
+        <EditText
+            android:id="@+id/password"
+            android:layout_width="match_parent" android:layout_height="52dp"
+            android:layout_marginTop="8dp" android:background="@drawable/bg_outline"
+            android:paddingStart="16dp" android:paddingEnd="16dp"
+            android:hint="Mínimo 6 caracteres" android:textColorHint="@color/hint"
+            android:textColor="@color/earth_brown" android:textSize="15sp"
+            android:inputType="textPassword" android:maxLines="1"/>
+
+        <TextView
+            android:layout_width="wrap_content" android:layout_height="wrap_content"
+            android:text="TIPO DE CUENTA" android:textColor="@color/text_muted" android:textSize="11sp"
+            android:textStyle="bold" android:letterSpacing="0.08" android:layout_marginTop="22dp"/>
+        <RadioGroup
+            android:id="@+id/roleGroup"
+            android:layout_width="match_parent" android:layout_height="wrap_content">
+            <RadioButton
+                android:id="@+id/roleBuyer"
+                android:layout_width="wrap_content" android:layout_height="wrap_content"
+                android:text="Comprador" android:checked="true" android:buttonTint="@color/terracotta"
+                android:textColor="@color/earth_brown"/>
+            <RadioButton
+                android:id="@+id/roleSeller"
+                android:layout_width="wrap_content" android:layout_height="wrap_content"
+                android:text="Vendedor" android:buttonTint="@color/terracotta"
+                android:textColor="@color/earth_brown"/>
+        </RadioGroup>
+        <CheckBox
+            android:id="@+id/consent"
+            android:layout_width="match_parent" android:layout_height="wrap_content"
+            android:text="Acepto la política de privacidad y los términos y condiciones."
+            android:buttonTint="@color/terracotta" android:textColor="@color/earth_brown"
+            android:textSize="13sp"/>
+        <com.google.android.material.button.MaterialButton
+            android:id="@+id/submitRegister"
+            android:layout_width="match_parent" android:layout_height="wrap_content"
+            android:layout_marginTop="16dp" android:text="Crear cuenta"/>
+    </LinearLayout>
+</ScrollView>

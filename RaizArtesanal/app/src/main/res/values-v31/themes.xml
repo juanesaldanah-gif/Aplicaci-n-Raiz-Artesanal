@@ -1,0 +1,8 @@
+<resources>
+    <!-- Android 12+: el splash del sistema muestra el logo sobre terracota -->
+    <style name="Theme.RaizArtesanal.Launch">
+        <item name="android:windowBackground">@color/terracotta</item>
+        <item name="android:windowSplashScreenBackground">@color/terracotta</item>
+        <item name="android:windowSplashScreenAnimatedIcon">@drawable/ic_logo</item>
+    </style>
+</resources>
